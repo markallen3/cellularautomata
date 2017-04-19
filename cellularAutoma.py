@@ -3,6 +3,12 @@
 #this is my own work, provided for anyone who has knowledge
 # of python for use in any way for the betterment of humankind.
 # (c) 2017
+rule=range(256)
+current_rule=bin(102)
+current_rule=current_rule[2:]
+current_rule="0"*(8-len(current_rule))+current_rule
+print current_rule,len(current_rule)
+
 rule_110="01101110"
 rule_102="01100110"
 dict_102 = {"000" : "0",

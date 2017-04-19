@@ -25,8 +25,8 @@ dict_102 = {"000" : "0",
             "110" : "1",
             "111" : "0" }
 
-first_line="0"*75+"1"+"0"*25
-print first_line
+first_line="0"*75+"1"+"0"*25 #if you don't start with a 1 somewhere, you don't get anything.
+print first_line.strip()
 #import pdb
 #pdb.set_trace()
 current_line=first_line.strip()

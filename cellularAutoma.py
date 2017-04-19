@@ -3,6 +3,11 @@
 #this is my own work, provided for anyone who has knowledge
 # of python for use in any way for the betterment of humankind.
 # (c) 2017
+#Notes:
+# The contractive mapping on either side is counter intuitive, but because of the rules, must be in place
+# otherwise the universe shrinks down to nothing.
+# The use of trits in genomics is profoundly similar.
+# see: https://en.wikipedia.org/wiki/Genetic_code#RNA_codon_table
 rule=range(256)
 current_rule=bin(102)
 current_rule=current_rule[2:]
@@ -31,4 +36,4 @@ for itheir in  range(0,900):
        #print itheir,j,current_line[j:j+3],dict_110[current_line[j:j+3]]
        next_line=next_line+dict_102[current_line[j:j+3]]
     print next_line
-    current_line="0"+next_line+"00" 
+    current_line="0"+next_line+"00"  # it is a contractive mapping so we need to add back the universe on either side.
